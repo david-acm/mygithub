@@ -18,7 +18,7 @@ GithubRepository.prototype.redirectToReleaseFile = function (release) {
 	if(!index){
 		var assetName = this.getAssetName();
 	var i = assetName? parseInt(assetName): 0;
-	if (i>=0) assetName = release.assets[i].name;
+	if (i >= 0 && i < release.assets.length) assetName = release.assets[i].name;
 		var downloaded = false;
 		var names = [];
 		for (var i = 0; i < release.assets.length; ++i) {

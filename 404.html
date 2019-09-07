@@ -4,7 +4,7 @@ permalink: /404.html
 
 <html>
   <head>
-    <title>Downloading ...</title>
+    <title>Get latest release from any repo</title>
   </head>
   <body>
     <p id="status">Enable JavaScript to download the file.</p>
@@ -14,7 +14,8 @@ permalink: /404.html
     <script type="text/javascript">
       /* ----------- common.js ----------*/
       {% include common.js %}
-      setStatus("Error on this page: Cannot download.")
+      window.document.title = "downloading file...";
+      setStatus("Error on this page: Cannot download.");
       /* ----------- github.js ----------*/
       {% include github.js %}
       /* ----------- gitlab.js ----------*/
